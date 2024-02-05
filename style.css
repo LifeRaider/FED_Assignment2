@@ -418,3 +418,153 @@ nav{
     border-radius: 50px;
     cursor: pointer;
 }
+
+/* Attention: Footer CSS begins from this point */
+
+/* Footer background color */
+footer {
+    background-color: rgb(51, 50, 50);
+}
+
+/* This determines the footers dimensions and paddings */
+.footerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 30px;
+}
+
+/* Change the color for the text in the left footer */
+.footerLeft h4{
+    color: white;
+}
+
+/* This section of code aligns the LendLease Image to the social media Icon */
+.footerLeft, .footerRight {
+    flex: 1; /* Makes both columns take up equal space */
+}
+
+/* Footer LendLease Icon */
+.FooterIcon{
+    position:relative;
+}
+
+/* CSS for social icons */
+.socialIcons{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* CSS for the box behind the icons */
+.socialIcons a {
+    text-decoration: none;
+    padding:10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+/* Social media hover effect */
+.socialIcons a:hover{
+    background-color: red;
+    transition: 0.5s;
+}
+
+
+/* CSS for the other links */
+.footerNav{
+    /* Note: 30px is for the top and bottom padding and the 0 refers to the left and right padding */
+    margin: 30px 0;
+}
+
+/* This moves the other links to the middle */
+.footerNav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+/* This section of code represents the state of the links when not selected */
+.footerNav ul li a{
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+/* This section of code represents the state of the links when a mouse hovers over it */
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+
+/* CSS codes to make a vertical line in between the other links */
+.footerNav ul li:not(:last-child)::after {
+    content: "|"; 
+    color: red; 
+    /* Space before the separator */
+    margin-left: 10px; 
+    margin-right: 10px; 
+    /* Make the line thicker */
+    font-weight:bold;
+    font-size: 20px;
+}
+
+/* CSS codes for the Additional Information from here on out */
+.AdditionalInfo{
+    color: white;
+    text-align: right;
+    padding: 10px;
+}
+
+/* CSS codes for the copyright section */
+.footerBottom{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+/* CSS codes to make the footer responsive */
+@media (max-width: 700px){
+    /* This makes the other links form up a column when in mobile view */
+    .footerNav ul{
+        flex-direction: column;
+        list-style-type: none;
+    }
+    /* This aligns the other links to the center */
+    .footerNav ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+    .footerContainer {
+        flex-direction: column; /* Stacks footerLeft and footerRight on top of each other */
+        align-items: center; /* Centers the child elements */
+        padding: 50px 30px; /* Adjust the padding as necessary */
+    }
+
+    .footerLeft, .footerRight {
+        flex: none; /* Resets the flex property */
+        width: 100%; /* Makes the children take the full width of the container */
+        justify-content: center; /* Center the content */
+        text-align: center; /* Aligns the text to the center */
+    }
+
+    .socialIcons, .footerNav {
+        justify-content: center; /* Center the social icons and navigation links */
+        margin: 0; /* Resets the margin to ensure center alignment */
+    }
+    
+    /* CSS codes to  remove the vertical line in between the other links */
+    .footerNav ul li:not(:last-child)::after {
+        content: none;
+    }
+
+    /* Centralize the additional information */
+    .AdditionalInfo{
+        text-align: center;
+    }
+}
