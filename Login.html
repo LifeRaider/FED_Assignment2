@@ -5,10 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jem</title>
     <link rel="icon" type="image/png" href="Assets/jem_icon.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleLogin.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Internal style sheet for CSS styling that us unique to the Login page -->
+    <style>
+        /* CSS styling for the overall page*/
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            min-height: 100vh;
+            background: url('Assets/jem_mall.jpg') no-repeat;
+            background-size: cover;
+            background-position: center;
+            }
+    </style>
 </head>
-<body id = "Login">
+<body>
     <div class="wrapper">
         <form action="">
             <h1>Login</h1>
@@ -37,7 +56,11 @@
             <div class="register-link">
                 <p>
                     Don't have an account?
-                    <a href="#">Register</a> today
+                    <a href="SignUp.html">Register</a> here
+                </p>
+                <br>
+                <p>
+                    Return back to <a href="index.html">Home</a> page
                 </p>
             </div>
         </form>
