@@ -7,7 +7,53 @@
     <link rel="icon" type="image/png" href="Assets/jem_icon.png">
     <link rel="stylesheet" href="styleLogin.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        /* CSS styling for the backgrounf */
+        body{
+            min-height: 100vh;
+            background: url('Assets/jem_mall.jpg') no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
 </head>
 <body>
+    <div class="signup-box">
+        <h1>Sign Up</h1>
+        <h4>Sign up to receive weekly updates from JEM!</h4>
+        <form>
+            <label>First Name</label>
+            <input type="text" placeholder="First Name" required>
+
+            <label>Last Name</label>
+            <input type="text" placeholder="Last Name" required>
+
+            <label>Email</label>
+            <input type="email" placeholder="Email" required>
+
+            <label>Username</label>
+            <input type="text" placeholder="Username" required>
+
+            <label>Password</label>
+            <input type="password" placeholder="Password" required>
+
+            <label>Confirm Password</label>
+            <input type="password" placeholder="Password" required>
+
+            <input type="button" value="submit">
+        </form>
+        <div class="AgreementText">
+            <p>
+                By clicking submit, you agree to our <br>
+                <a href="#">Terms and conditions</a> and 
+                <a href="#">Private policy</a>
+            </p>
+        </div>
+    </div>
+    <p class="Section2text">
+        Already have an account? <a href="Login.html">Login here</a>
+        <br>
+        Return back to <a href="index.html">Home</a> page
+    </p>
 </body>
 </html>
