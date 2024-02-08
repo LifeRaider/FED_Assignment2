@@ -111,6 +111,83 @@ nav{
 }
 .show{display: block;}
 
+/* The CSS styling for the Map page */
+.Map h1{
+    margin-top: 90px;
+}
+
+/* Adjust the position of the image on the html page */
+#container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* How the image and footer responds to a smaller screen */
+@media only screen and (max-width:700px){
+    #container{
+        margin-left: 100px;
+    } 
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        z-index: 100;
+        
+    }
+}
+
+#Image_container{
+    position: relative;
+}
+/* Overlay Image CSS styling */
+#Overlay {
+    position: absolute;
+    top: 400px;  
+    left: 120px; 
+    z-index: 10; 
+
+    /* Adjust its size */
+    width: 10px;
+   
+}
+
+/* Make sure the image container is relative so absolute positioning is relative to it */
+#Image_container {
+    position: relative;
+}
+
+/* For the pop up button */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    z-index: 100;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    /* This ensures the popup is not visible till activated */
+    display: none; 
+}
+
+.popup-content {
+    text-align: center;
+}
+
+.close-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 25px;
+}
+
 
 
 /* The CSS styling for the Terms of conditions */
