@@ -125,25 +125,12 @@ nav{
     width: 100%;
     height: auto;
     display: flex;
-    justify-content: center;
     align-items: center;
-    
+    overflow: auto;
 }
 
 /* How the image and footer responds to a smaller screen */
-@media only screen and (max-width:700px){
-    #container{
-        margin-left: 100px;
-    } 
 
-    footer {
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        z-index: 100;
-        
-    }
-}
 
 #Image_container{
     position: relative;
@@ -155,7 +142,7 @@ nav{
     left: 120px; 
     z-index: 2;
     /* Adjust its size */
-    width: 10px;
+    width: 20px;
 }
 
 /* Make sure the image container is relative so absolute positioning is relative to it */

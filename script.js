@@ -25,17 +25,20 @@ window.onscroll = function() {
   if (document.getElementById("index-navbar") != null) {
     var indexnavbar = document.getElementById("index-navbar")
     var menu = document.querySelector('.dropbtn img')
+    var loginBtn = document.querySelector('.login-btn')
   
     if (currentScrollPos < 100) {
       indexnavbar.style.top = "0";
       indexnavbar.style.backgroundColor = "rgba(0, 0, 0, 0)";
       menu.src = "Assets/Main_menu.png";
+      loginBtn.style.color = "rgb(0, 0, 0)";
     } else if (prevScrollpos > currentScrollPos) {
       indexnavbar.style.top = "0";
     } else {
       indexnavbar.style.top = "-80px";
       indexnavbar.style.backgroundColor = "rgba(0, 0, 0, 1)"
       menu.src = "Assets/Main_menu_light.png";
+      loginBtn.style.color = "rgb(255, 255, 255)";
     }
   } else {
     var navbar = document.getElementById("navbar");
