@@ -144,3 +144,4 @@
 .menu-control:checked+.sidebar .sidebar__menu a {
   transform: translateX(0);
 }
+

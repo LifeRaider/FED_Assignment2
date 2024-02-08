@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jem</title>
+    <link rel="icon" type="image/png" href="Assets/jem_icon.png">
+    <link rel="stylesheet" href="styleLogin.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Internal style sheet for CSS styling that us unique to the Login page -->
+    <style>
+        /* CSS styling for the overall page*/
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            min-height: 100vh;
+            background: url('Assets/jem_mall.jpg') no-repeat;
+            background-size: cover;
+            background-position: center;
+            }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <form action="">
+            <h1>Login</h1>
+            <!-- Creating an input box for the username -->
+            <div class="input-box">
+                <input type="text" placeholder="Username" required>
+                <i class='bx bxs-user'></i>
+            </div>
+
+            <!-- Creating an input box for Password -->
+            <div class="input-box">
+                <input type="password" placeholder="Password" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            
+            <!-- Add a "remember me" and "forget password" function -->
+            <div class="remember-forget">
+                <label><input type="Checkbox">Remember me</label>
+                <a href="#">Forget password?</a>
+            </div>
+
+            <!-- The submit button -->
+            <button type = "submit" class="btn">Login</button>
+
+            <!-- Function for people who dont have an account -->
+            <div class="register-link">
+                <p>
+                    Don't have an account?
+                    <a href="signUp.html">Register</a> here
+                </p>
+                <br>
+                <p>
+                    Return back to <a href="index.html">Home</a> page
+                </p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

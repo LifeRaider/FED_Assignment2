@@ -24,15 +24,18 @@ window.onscroll = function() {
   var currentScrollPos = window.scrollY;
   if (document.getElementById("index-navbar") != null) {
     var indexnavbar = document.getElementById("index-navbar")
+    var menu = document.querySelector('.dropbtn img')
   
     if (currentScrollPos < 100) {
       indexnavbar.style.top = "0";
       indexnavbar.style.backgroundColor = "rgba(0, 0, 0, 0)";
+      menu.src = "Assets/Main_menu.png";
     } else if (prevScrollpos > currentScrollPos) {
       indexnavbar.style.top = "0";
     } else {
       indexnavbar.style.top = "-80px";
       indexnavbar.style.backgroundColor = "rgba(0, 0, 0, 1)"
+      menu.src = "Assets/Main_menu_light.png";
     }
   } else {
     var navbar = document.getElementById("navbar");
@@ -111,6 +114,7 @@ document.addEventListener("DOMContentLoaded", function() {
   getAndDisplayAirTemperature();
 });
 
+
 // Humidity
 document.addEventListener("DOMContentLoaded", function() {
   // Function to fetch and display the current humidity readings
@@ -132,6 +136,7 @@ document.addEventListener("DOMContentLoaded", function() {
   // Call the function when the page loads
   getAndDisplayHumidity();
 });
+
 
 // Air quality
 document.addEventListener("DOMContentLoaded", function() {
@@ -175,6 +180,35 @@ function getAndDisplayUVIndex() {
 }
 // Call the function when the page loads
 document.addEventListener("DOMContentLoaded", getAndDisplayUVIndex);
+
+
+// Rainfall
+document.addEventListener("DOMContentLoaded", function() {
+  // Function to fetch and display the current rainfall at Clementi Road
+  function getAndDisplayRainfall() {
+    const apiUrl = "https://api.data.gov.sg/v1/environment/rainfall";
+
+    // Make AJAX request
+    fetch(apiUrl + "?date_time=2024-02-05T12:00:00")
+      .then(response => response.json())
+      .then(data => {
+        // Assume data structure matches the OpenAPI specification
+        const clementiRoadData = data.items[0].readings.find(station => station.station_id === "S50");
+
+        // Update the content in the result div
+        const resultDiv = document.querySelector('.weather video')
+        if (clementiRoadData.value > 0.2) {
+          resultDiv.src = "Assets/home_raining.mp4";
+        } else if(new Date().getHours() > 7 && new Date().getHours() < 19) {
+          resultDiv.src = "Assets/home_cloudy_day.mp4";
+        } else {
+          resultDiv.src = "Assets/home_cloudy_night.mp4";
+        }
+      })
+  }
+  // Call the function when the page loads
+  getAndDisplayRainfall();
+});
 
 
 

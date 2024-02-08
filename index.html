@@ -10,8 +10,7 @@
 </head>
 <body>
     <nav id="index-navbar" style="background-color: rgba(0, 0, 0, 0)">
-        <p id="bye"></p>
-        <a class="login-btn">Login</a>
+        <a class="login-btn" href="login.html">Login</a>
         <a class="logo-btn" href="index.html"><img src="Assets\jem_icon_no_bg.png" alt=""></a>
         <div class="menu-btn">
             <button onclick="myFunction()" class="dropbtn"><img class="dropbtn" src="Assets/Main_menu.png" alt="MENU"></button>
@@ -35,6 +34,7 @@
             </div>
         </div>
     </nav>
+    
     <section class="cover-img">
         <div class="tint1"></div>
         <div class="tint2"></div>
@@ -82,28 +82,28 @@
         <a href=""><img src="Assets/home_event_6.jpg" alt=""></a>
     </div> -->
     <section class="weather" id="weather">
-        <video autoplay muted loop src="Assets\home_rain_animation.mp4"></video>
+        <video autoplay muted loop></video>
         <h3>Weather at Jem</h3>
         <div class="weather-info">
             <div class="temp">
                 <h4>Temperature</h4>
                 <div class="info">
                     <h2 id="temp"></h2>
-                    <p>&deg;C</p>
+                    <p><sub>&deg;C</sub></p>
                 </div>
             </div>
             <div class="rh">
                 <h4>Humidity</h4>
                 <div class="info">
                     <h2 id="rh"></h2>
-                    <p>%</p>
+                    <p><sub>%</sub></p>
                 </div>
             </div>
             <div class="air">
                 <h4>Air Quality</h4>
                 <div class="info">
                     <h2 id="air-quality"></h2>
-                    <p>&micro;g/m&sup3;</p>
+                    <p><sub>&micro;g/m&sup3;</sub></p>
                 </div>
             </div>
             <div class="uv">
@@ -118,42 +118,50 @@
 
     <footer>
         <div class="footerContainer">
-            <div class="footerLeft">
-                <!-- LendLease Icon -->
+
+            <!-- LendLease Icon -->
+            <div class="footerIcon">
                 <h4>Managed by:</h4>
-                <br>
-                <img src="Assets/LandLease Img.png" width=300px>
+                <img src="Assets/LandLease Img.png">
             </div>
 
-            <div class="footerRight">
-                <!-- Social media Sector -->
-                <div class="socialIcons">
-                    <a href="https://www.instagram.com/jemsingapore/" target="_blank"><img src="Assets/instagram.png" width = 32px; height = 32px;></a>
-                    <a href="https://www.facebook.com/JemSingapore" target="_blank"><img src="Assets/Facebook.png" width = 32px; height = 32px;></a>
-                </div>
-
-                <div class = "footerNav">
+            <div class="footerInner">
+                <div class="footerLinks">
+                    <h6>NEED HELP?</h6>
+                    <div class="footerLine"></div>
                     <ul>
                         <li><a href = "index.html">Home</a></li>
-                        <li><a href = "">Terms of Use</a></li>
-                        <li><a href = "">Privacy Policy</a></li>
-                        <li><a href = "">Contact Us!</a></li>
+                        <li><a href = "https://www.jem.sg/details.php?c=149&desc=Footer+Menu&p=1751&t=disclaimer">Terms of Use</a></li>
+                        <li><a href = "https://www.jem.sg/details.php?c=149&desc=Footer+Menu&p=1750&t=privacy-policy">Privacy Policy</a></li>
+                        <li><a href = "aboutUs.html#3">Contact Us!</a></li>
                     </ul>
                 </div>
+
+                <div class="footerSocial">
+                    <!-- Social media Sector -->
+                    <h6>FOLLOW US</h6>
+                    <div class="footerLine"></div>
+                    <div class="socialIcons">
+                        <a href="https://www.instagram.com/jemsingapore/" target="_blank"><img src="Assets/instagram.png"></a>
+                        <a href="https://www.facebook.com/JemSingapore" target="_blank"><img src="Assets/Facebook.png"></a>
+                    </div>
+                </div>
             </div>
+
+            <!-- Directions -->
+            <div class="footerInformation"> <!-- AdditionalInfo -->
+                <h6>Information</h6>
+                <div class="footerLine"></div>
+                <p>50 Jurong Gateway Road, Singapore 608549</p>
+                <p>Contact Number: +65 6225 5536</p>
+                <p>Operning Hours: 10am to 10pm</p>
+            </div>
+
         </div>
-        <!-- Additional info sector -->
-        <div class="AdditionalInfo">
-            <p>Address: 50 Jurong Gateway Road, Singapore 608549</p>
-            <p>Contact Number: +65 6225 5536</p>
-            <p>Operning Hours: 10am to 10pm</p>
-        </div>
-        
-        <div class="footerBottom">
+        <div class="footerCpr">
+            <div class="footerLine"></div>
             <!-- Note: Javascript is to get the year -->
-            <p>
-                Copyright &copy <script>document.write(new Date().getFullYear());</script> Jem All Rights Reserved
-            </p>
+            <p>&copy <script>document.write(new Date().getFullYear());</script> Jem &#8212; All Rights Reserved</p>
         </div>
     </footer>
     <script src="script.js"></script>
