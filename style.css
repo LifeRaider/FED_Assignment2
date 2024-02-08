@@ -36,6 +36,7 @@ nav{
     position: absolute;
     left: 3%;
     padding: 6px;
+    color: rgb(255, 255, 255);
 }
 .logo-btn{
     display: flex;
@@ -111,6 +112,9 @@ nav{
 }
 .show{display: block;}
 
+
+
+
 /* The CSS styling for the Map page */
 .Map h1{
     margin-top: 90px;
@@ -149,11 +153,9 @@ nav{
     position: absolute;
     top: 400px;  
     left: 120px; 
-    z-index: 10; 
-
+    z-index: 2;
     /* Adjust its size */
     width: 10px;
-   
 }
 
 /* Make sure the image container is relative so absolute positioning is relative to it */
@@ -581,15 +583,9 @@ footer{
     margin: 0;
     font-size: 1.2em;
 }
-
-
-
 .chellenges{
     padding: 0.2em 1em;
 }
-/* .chellenges h */
-
-
 .redeem-container{
     justify-content: center;
     display: flex;
@@ -737,8 +733,3 @@ footer{
     padding-left: 20px;
     font-size: 13px;
 }
-/* .contact form button{
-    width: 200px;
-    align-self: center;
-} */
-
