@@ -13,21 +13,61 @@
         <a class="login-btn" href="login.html">Login</a>
         <a class="logo-btn" href="index.html"><img src="Assets\jem_icon_no_bg.png" alt=""></a>
         <div class="menu-btn">
-            <button onclick="myFunction()" class="dropbtn"><img class="dropbtn" src="Assets/Main_menu_light.png" alt="MENU"></button>
+            <button onclick="myFunction()" class="dropbtn"><img class="dropbtn" src="Assets/Main_menu.png" alt="MENU"></button>
             <div id="myDropdown" class="myDropdownClass">
                 <ul class="dropdown-content">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="map.html">Map</a></li>
-                    <li><a href="rewards.html">Rewards</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
                     <li><a href="aboutUs.html">About Us</a></li>
                     <!-- <li><a href=""></a></li>
                     <li><a href=""></a></li> -->
                 </ul>
+                <div class="social-media-bar">
+                    <a href="https://www.instagram.com/official_kard/"><img src="Assets/Social_instagram2.png" alt="Social_instagram"></a>
+                    <a href="https://twitter.com/kard_official"><img src="Assets/Social_twitter2.png" alt="Social_twitter"></a>
+                    <a href="https://www.facebook.com/officialkard/"><img src="Assets/Social_facebook2.png" alt="Social_facebook"></a>
+                    <a href="https://open.spotify.com/artist/2JhAlkmukNvarUpGhTFXUQ"><img src="Assets/Social_spotify2.png" alt="Social_spotify"></a>
+                    <a href="https://www.youtube.com/@KARD"><img src="Assets/Social_youtube2.png" alt="Social_youtube"></a>
+                    <a href="https://www.tiktok.com/@official.kard"><img src="Assets/Social_tiktok2.png" alt="Social_tiktok"></a>
+                </div>
             </div>
         </div>
     </nav>
-    <section>
-
+    <section class="Map">
+        <h1>Level 1</h1>
+        <div id="container">
+            <div id="Image_container">
+                <img src="Assets/L1.jpg" usemap="#image_map">
+                <!-- Adding the POI which can be clicked to reveal a secret message -->
+                <img src="Assets/POI.png" alt="Overlay Image" id="Overlay">
+                <map name="image_map">
+                <!-- This was done using: https://imagemap.org/-->
+                <area alt="Ikea" title="Ikea" target="_blank" href="https://www.ikea.com/sg/en/stores/jurong/?gad_source=1&gclid=CjwKCAiAlJKuBhAdEiwAnZb7lXopzvRyKBlrDZakJjPUBjExEZXXHbQ7aRS1q9avJlfK8WDmd4Va4hoCuy8QAvD_BwE&gclsrc=aw.ds" coords="448,262 582,395 586,391 620,389 646,279 531,224 512,263 " shape="polygon">
+                <area alt="Tiong Bahru Bakery" title="Tiong Bahru Bakery" target="_blank"  href="https://www.tiongbahrubakery.com/" coords="85,371 113,399 87,431 58,432 " shape="polygon">
+                <area alt="Pazzion " title="Pazzion " target="_blank"  href="https://www.pazzion.com/" coords="100,342 136,370 115,397 87,371 " shape="polygon">
+                <area alt="prettyFIT" title="prettyFIT" target="_blank"  href="https://www.prettyfit.com.sg/" coords="112,315 100,340 137,371 154,353 " shape="polygon">
+                <area alt="Uniqlo" title="Uniqlo" target="_blank"  href="https://map.uniqlo.com/sg/en/detail/11300011/" coords="129,276 214,277 214,283 154,351 113,317 " shape="polygon">
+                <area alt="H&M" title="H&M" target="_blank"  href="https://www2.hm.com/en_sg/customer-service/shopping-at-hm/local-store.SG0703.html" coords="155,180 144,204 149,207 126,260 231,259 243,248 243,210 216,209 215,182 " shape="polygon">
+                <area alt="Starbucks" title="Starbucks" target="_blank"  href="https://www.starbucks.com/store-locator/store/1005200/jem-50-jurong-gateway-road-singapore-05-608549-sg" coords="260,199,296,253" shape="rect">
+                <area alt="Marche Movenpick" title="Marche Movenpick" target="_blank"  href="https://marche-movenpick.sg/en/our-locations/jem" coords="354,198 356,215 345,216 344,241 315,240 301,253 298,253 296,199 " shape="polygon">
+                <area alt="4 fingers" title="4 fingers" target="_blank"  href="https://www.jem.sg/stores/4fingers-crispy-chicken" coords="528,432 582,433 589,427 553,391 528,389 " shape="polygon">
+                <area alt="Tempura Makino" title="Tempura Makino" href="https://tempuramakino.com.sg/" coords="483,401 491,390 527,390 528,433 483,433 " shape="polygon">
+                <area alt="吃茶三千" title="吃茶三千" href="https://www.jem.sg/stores/chicha-san-chen" coords="483,372 461,372 460,438 483,408 " shape="polygon">
+                </map>
+            </div>
+        </div>
+        <!-- For the pop up button -->
+        <div id="popup" class="popup" style="display: none;">
+            <div class="popup-content">
+                <span class="close-btn" onclick="closePopup()">&times;</span>
+                <h1>Congratulations!</h1>
+                <p>
+                    You've found todays point of interest! Head to this location and scan the QR code.
+                    Stand to win attractive prizes!
+                </p>
+            </div>
+        </div>
     </section>
     <footer>
         <div class="footerContainer">
