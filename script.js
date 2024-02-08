@@ -265,6 +265,14 @@ if (window.location.href.indexOf("aboutUs.html") > -1) {
 };
 
 
+// Rewards
+if (window.location.href.indexOf("signUp.html") > -1) {
+  if (loginName != ""){
+
+  }
+};
+
+
 
 // Sign up
 if (window.location.href.indexOf("signUp.html") > -1) {
@@ -344,7 +352,8 @@ if (window.location.href.indexOf("signUp.html") > -1) {
 
 
 
-
+var loginName = "";
+var loginPoints = "";
 // Login
 if (window.location.href.indexOf("login.html") > -1) {
   // Contact form
@@ -381,6 +390,10 @@ if (window.location.href.indexOf("login.html") > -1) {
         .then(response => {
           for (var i = 0; i < response.length; i++) {
             if (username == response[i].Username && password == response[i].password){
+              var login = document.getElementById("login-btn");
+              login.innerHTML = response[i].Username;
+              login.style.pointerEvents = "none";
+              loginPoints = response[i].Points;
               window.location.href = 'index.html';
             }
           }

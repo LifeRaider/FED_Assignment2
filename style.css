@@ -76,7 +76,7 @@ nav{
 }
 .myDropdownClass{
     position: fixed;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 0, 0, 0.9);
     top: 80px;
     left: 0;
     width: 100vw;
@@ -94,7 +94,7 @@ nav{
 }
 .dropdown-content a{
     display: flex;
-    color: black;
+    color: rgb(224, 200, 200);
     text-align: center;
     text-decoration: none;
     margin-top: 4.5vh;
@@ -447,18 +447,82 @@ footer{
 
 
 
-
-
 /* Rewards */
-.points{
-    height: 50vh;
+
+.rewards{
+    padding: 5vw;
+}
+.reward-board{
+    margin: 2em;
+    margin-top: 80px;
+    padding: 5vw;
+    text-align: center;
+    background-color: rgb(220, 225, 245);
+}
+.reward-icons{
+    display: flex;
+    justify-content: center;
+}
+.reward-icons img{
+    width: 11vw;
+    margin: 0.5em;
+    padding: 1vw;
+    border-radius: 50%;
+    background-color: rgb(194, 194, 194);
+}
+.points-content{
+    display: flex;
+    width: 8em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.points-content h3{
+    display: flex;
+    align-items: baseline;
+    margin: 0;
+}
+.points-content h3 p{
+    font-size: 0.6em;
+    margin: 0;
+    margin-left: 0.2em;
+}
+.points-content h5{
+    margin: 0;
+    font-size: 1.2em;
 }
 
 
 
+.chellenges{
+    padding: 0.2em 1em;
+}
+/* .chellenges h */
 
 
-
+.redeem-container{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.redeem{
+    display: flex;
+    flex-direction: column;
+    width: 34vw;
+    aspect-ratio: 1 1;
+    margin: 1em;
+    justify-content: center;
+    /* background-color: rgb(184, 184, 184); */
+}
+.redeem img{
+    width: 100%;
+    padding: 1em;
+    outline: auto;
+}
+.redeem h5{
+    text-align: center;
+    font-size: 0.8em;
+}
 
 
 

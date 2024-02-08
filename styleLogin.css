@@ -8,8 +8,9 @@ design compared to the other HTML pages.
 
 /* This section of code styles the container that the login information is in */
 .wrapper{
+    display: flex;
     width: 90vw;
-    max-width: 460px;
+    padding: 13vw;
     /*rgba to make the background translucent */
     background: rgba(0, 0, 0, 0.8);
     color: white;
@@ -24,7 +25,7 @@ design compared to the other HTML pages.
 }
 
 /* Styles the input box */
-.wrapper .input-box{
+.input-box{
     position: relative;
     width: 100%;
     height: 50px;
