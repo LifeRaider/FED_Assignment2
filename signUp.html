@@ -23,22 +23,22 @@
         <h4>Sign up to receive weekly updates from JEM!</h4>
         <form>
             <label>First Name</label>
-            <input type="text" placeholder="First Name" required>
+            <input type="text" id = "FirstName" placeholder="First Name" required>
 
             <label>Last Name</label>
-            <input type="text" placeholder="Last Name" required>
+            <input type="text" id="LastName" placeholder="Last Name" required>
 
             <label>Email</label>
-            <input type="email" placeholder="Email" required>
+            <input type="email" id="Email" placeholder="Email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
 
             <label>Username</label>
-            <input type="text" placeholder="Username" required>
+            <input type="text" id="Username" placeholder="Username" required>
 
             <label>Password</label>
-            <input type="password" placeholder="Password" required>
+            <input type="password" id="Password" placeholder="Password" required>
 
             <label>Confirm Password</label>
-            <input type="password" placeholder="Password" required>
+            <input type="password" id="CfmPassword" placeholder="CfmPassword" required>
 
             <input type="button" value="submit">
         </form>
