@@ -8,6 +8,7 @@ design compared to the other HTML pages.
 /* This section of code styles the container that the login information is in */
 .wrapper{
     width: 90vw;
+    max-width: 460px;
     /*rgba to make the background translucent */
     background: rgba(0, 0, 0, 0.8);
     color: white;
