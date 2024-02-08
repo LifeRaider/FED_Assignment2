@@ -5,6 +5,7 @@ design compared to the other HTML pages.
 
 /* Attention: Login page CSS begind from this point*/
 
+
 /* This section of code styles the container that the login information is in */
 .wrapper{
     width: 90vw;
@@ -14,7 +15,6 @@ design compared to the other HTML pages.
     color: white;
     border-radius: 10px;
     /* Top and bottom padding are 30px while Left and right padding are 40px */
-    padding: 30px 40px
 }
 
 /* Styles the Login word */
@@ -175,16 +175,15 @@ This styles the icons and moves them to the desired location used in conjunction
 }
 
 /* CSS styling for the submit button */
-.signup-box button{
+.signup-box input[type="submit"]{
     width: 320px;
     height: 35px;
-    margin-top: 25px;
+    margin-top: 20px;
     border: none;
-    border-radius: 6PX;
-    background-color: #3aac8f;
+    background-color: #49c1a2;
+    /* Text color */
     color: white;
     font-size: 18px;
-    cursor: pointer;
 }
 
 /* CSS styling for the First and Second section of text below */
