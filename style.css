@@ -498,6 +498,9 @@ footer{
     padding-top: 20px;
     padding-bottom: 30px;
 }
+.feedback-msg{
+    text-align: center;
+}
 .contact form{
     display: flex;
     flex-direction: column;
@@ -516,13 +519,8 @@ footer{
     padding-left: 20px;
     font-size: 13px;
 }
-.submit{
+/* .contact form button{
     width: 200px;
-    height: 30px;
     align-self: center;
-    background-color: rgb(183, 255, 255);
-    border: solid 1px black;
-    border-radius: 50px;
-    cursor: pointer;
-}
+} */
 

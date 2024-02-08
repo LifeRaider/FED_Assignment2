@@ -45,7 +45,7 @@
         </div>
         <div class="scrollLine"></div>
     </div>
-    <div class="sections">
+    <!-- <div class="sections">
         <section id="1" class="about">
             <h1>About Jem</h1>
             <div class="content">
@@ -98,22 +98,32 @@
                 <p>Every 30 mins $1.42</p>
             </div>
             <p class="extra">*Electric vehicles charging services located at B3 car park.</p>
-        </section>
+        </section> -->
+
         <section id="3" class="contact">
-            <form id="form">
+            <div class="feedback-msg" id="feedback-msg">
+                <div class="alert alert-success" role="alert">
+                    Feedback successfully sent!
+                </div>
+            </div>
+            <form id="feedback-form">
                 <h1>Contact Us</h1>
                 <br>
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="Name" placeholder="   -- Full Name --" required>
+
+                <label for="feedback-name">Full Name</label>
+                <input type="text" id="feedback-name" placeholder="   -- Full Name --" required>
                 <br>
-                <label for="contact">Contact Number</label>
-                <input type="tel" id="contact" name="Contact" placeholder="   -- Contact Number --" pattern="[0-9]{8}" required>
+
+                <label for="feedback-contact">Contact Number</label>
+                <input type="tel" id="feedback-contact" placeholder="   -- Contact Number --" pattern="[0-9]{8}" required>
                 <br>
-                <label for="contact">Email Address</label>
-                <input type="email" id="email" name="Email" placeholder="   -- Email Address --" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
+
+                <label for="feedback-email">Email Address</label>
+                <input type="email" id="feedback-email" placeholder="   -- Email Address --" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
                 <br>
-                <label for="type">Enquiry Type</label>
-                <select id="type" name="Type" required>
+
+                <label for="feedback-type">Enquiry Type</label>
+                <select id="feedback-type" required>
                     <option value="" disabled selected hidden>Select a Enquiry Type</option>
                     <option value="general">Genearl Feedback</option>
                     <option value="advertising">In-mall advertising and event space</option>
@@ -124,18 +134,21 @@
                     <option value="media">Media enquiries</option>
                 </select>
                 <br>
-                <label for="enquiry">Enquiry</label>
-                <textarea id="enquiry" name="Enquiry" rows="6" cols="30" placeholder="Type your message here..." required></textarea>
+
+                <label for="feedback-enquiry">Enquiry</label>
+                <textarea id="feedback-enquiry" rows="6" cols="30" placeholder="Type your message here..." required></textarea>
                 <br>
+
                 <div class="checkbox">
-                    <input type="checkbox" id="check" name="Check" required>
+                    <input type="checkbox" required>
                     <p>
                         Your personal data may be processed by us to respond to queries, and for related purposes as set out in the Privacy Policy. By submitting your personal data, you agree to be bound by our Privacy Policy and consent to the collection, use and disclosure of your personal data as set out in the Privacy Policy.<br><br>
                         I fully understand, agree and accept that the personal information which I have provided may be disclosed to the developer's appointed marketing agencies or individuals for the purpose of contacting me to attend and/or act upon my enquiries. I trust that the information will strictly be used for said purpose.
                     </p>
                 </div>
                 <br>
-                <button type="submit" id="submit" class="submit">Submit</button>
+
+                <input type="submit" value="Send" class="btn btn-primary" id="feedback-submit">
             </form>
         </section>
     </div>

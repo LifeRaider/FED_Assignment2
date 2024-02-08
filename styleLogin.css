@@ -7,9 +7,9 @@ design compared to the other HTML pages.
 
 /* This section of code styles the container that the login information is in */
 .wrapper{
-    width: 420px;
+    width: 90vw;
     /*rgba to make the background translucent */
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.8);
     color: white;
     border-radius: 10px;
     /* Top and bottom padding are 30px while Left and right padding are 40px */

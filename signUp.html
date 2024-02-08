@@ -14,46 +14,49 @@
             background: url('Assets/jem_mall.jpg') no-repeat;
             background-size: cover;
             background-position: center;
+            overflow: hidden;
         }
     </style>
 </head>
 <body>
-    <div class="signup-box">
-        <h1>Sign Up</h1>
-        <h4>Sign up to receive weekly updates from JEM!</h4>
-        <form>
-            <label>First Name</label>
-            <input type="text" id = "FirstName" placeholder="First Name" required>
-
-            <label>Last Name</label>
-            <input type="text" id="LastName" placeholder="Last Name" required>
-
-            <label>Email</label>
-            <input type="email" id="Email" placeholder="Email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
-
-            <label>Username</label>
-            <input type="text" id="Username" placeholder="Username" required>
-
-            <label>Password</label>
-            <input type="password" id="Password" placeholder="Password" required>
-
-            <label>Confirm Password</label>
-            <input type="password" id="CfmPassword" placeholder="CfmPassword" required>
-
-            <input type="button" value="submit">
-        </form>
-        <div class="AgreementText">
-            <p>
-                By clicking submit, you agree to our <br>
-                <a href="#">Terms and conditions</a> and 
-                <a href="#">Private policy</a>
-            </p>
+    <section class="signUp-page">
+        <div class="signup-box">
+            <h1>Sign Up</h1>
+            <h4>Sign up to receive weekly updates from JEM!</h4>
+            <form>
+                <label>First Name</label>
+                <input type="text" id = "signup-fName" placeholder="First Name" required>
+    
+                <label>Last Name</label>
+                <input type="text" id="signup-lName" placeholder="Last Name" required>
+    
+                <label>Email</label>
+                <input type="email" id="signup-email" placeholder="Email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
+    
+                <label>Username</label>
+                <input type="text" id="signup-username" placeholder="Username" required>
+    
+                <label>Password</label>
+                <input type="password" id="signup-password" placeholder="Password" required>
+    
+                <label>Confirm Password</label>
+                <input type="password" id="signup-cfmPassword" placeholder="Confirm Password" required>
+    
+                <input type="submit" value="submit" id="signup-submit">
+            </form>
+            <div class="AgreementText">
+                <p>
+                    By clicking submit, you agree to our <br>
+                    <a href="#">Terms and conditions</a> and 
+                    <a href="#">Private policy</a>
+                </p>
+            </div>
         </div>
-    </div>
-    <p class="Section2text">
-        Already have an account? <a href="Login.html">Login here</a>
-        <br>
-        Return back to <a href="index.html">Home</a> page
-    </p>
+        <p class="Section2text">
+            Already have an account? <a href="Login.html">Login here</a>
+            <br>
+            Return back to <a href="index.html">Home</a> page
+        </p>
+    </section>
 </body>
 </html>
