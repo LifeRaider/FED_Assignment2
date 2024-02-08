@@ -175,15 +175,16 @@ This styles the icons and moves them to the desired location used in conjunction
 }
 
 /* CSS styling for the submit button */
-.signup-box input[type="submit"]{
+.signup-box button{
     width: 320px;
     height: 35px;
-    margin-top: 20px;
+    margin-top: 25px;
     border: none;
-    background-color: #49c1a2;
-    /* Text color */
+    border-radius: 6PX;
+    background-color: #3aac8f;
     color: white;
     font-size: 18px;
+    cursor: pointer;
 }
 
 /* CSS styling for the First and Second section of text below */
