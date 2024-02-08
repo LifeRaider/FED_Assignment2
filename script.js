@@ -289,6 +289,12 @@ if (window.location.href.indexOf("signUp.html") > -1) {
       let username = document.getElementById("signup-username").value;
       let password = document.getElementById("signup-password").value;
       let cfmPassword = document.getElementById("signup-cfmPassword").value;
+      let points = 0;
+
+      if (password !== cfmPassword) {
+        alert("Passwords do not match!! Please try again");
+        return;
+      }
   
       //[STEP 3]: Get form values when the user clicks on send
       // Adapted from restdb API
@@ -298,7 +304,7 @@ if (window.location.href.indexOf("signUp.html") > -1) {
         "Email": email,
         "Username": username,
         "Password": password,
-        "Confirm Password": cfmPassword,
+        "Points": points,
       };
   
       //[STEP 4]: Create our AJAX settings. Take note of API key
