@@ -112,6 +112,61 @@ nav{
 .show{display: block;}
 
 
+
+/* The CSS styling for the Terms of conditions */
+/* Adjust the overall TOC container dimensions */
+.TOCandPrivacy{
+    margin-top: 90px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+/* Change the color of the terms of use */
+.TOCandPrivacy h2{
+    color: red;
+}
+
+/* Adjust the  TOC text size*/
+.TOCandPrivacy p{
+    font-size: 15px;
+}
+
+/* Style the lendlease link in the TOC */
+.TOCandPrivacy p a{
+    color: red;
+}
+
+
+.TOCandPrivacy p a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+/* Styling for the h5 in the TOC */
+.TOCandPrivacy h5{
+    font-weight: bold;
+}
+
+/* Styling for the list */
+/* Remove the original list marker */
+.TOCandPrivacy ul{
+    list-style-type:none;
+}
+
+/* Adds spacing between the list contents */
+.TOCandPrivacy li{
+    margin-bottom: 20px;
+}
+
+/* Custom list marker */
+.TOCandPrivacy li::before{
+    content: "//";
+    color: red;
+    display: inline-block;
+    width: 20px;
+    margin-left: -20px;
+}
+
 /* Footer */
 /* Footer background color */
 footer{
