@@ -452,9 +452,22 @@ footer{
 .rewards{
     padding: 5vw;
 }
+.chell{
+    padding: 1em;
+    background-color: rgb(253, 243, 243);
+}
+.red{
+    margin-top: 1.5em;
+    padding-top: 1em;
+    background-color: rgb(243, 220, 220);
+}
+.red h2{
+    margin-left: 1em;
+}
 .reward-board{
     margin: 2em;
     margin-top: 80px;
+    margin-bottom: 1em;
     padding: 5vw;
     text-align: center;
     background-color: rgb(220, 225, 245);
