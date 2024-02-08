@@ -174,7 +174,7 @@ This styles the icons and moves them to the desired location used in conjunction
 }
 
 /* CSS styling for the submit button */
-.signup-box input[type="button"]{
+.signup-box input[type="submit"]{
     width: 320px;
     height: 35px;
     margin-top: 20px;

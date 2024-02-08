@@ -251,11 +251,11 @@ footer{
 }
 .cover-img h1{
     position: absolute;
-    bottom: 3.5%;
+    bottom: 3%;
     right: 7%;
     color: rgb(223, 223, 223);
     text-align: right;
-    font-size: 70px;
+    font-size: 65px;
     line-height: 70px;
     opacity: 1;
     animation: fadeIn 1.5s ease-in-out;
@@ -344,22 +344,13 @@ footer{
         opacity: 1
     }
 }
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-    .prev,
-    .next,
-    .text {
-        font-size: 11px
-    }
-}
 
 .weather{
     position: relative;
     top: 4.5vh;
     width: 88vw;
-    height: 50vh;
     margin: auto;
-    /* color: rgb(239, 250, 239); */
+    margin-bottom: 15%;
     overflow: hidden;
     font-size: 3.6vw;
 }
@@ -396,6 +387,23 @@ footer{
 .info p{
     margin-left: 2vw;
 }
+
+
+
+
+
+
+
+/* Rewards */
+.points{
+    height: 50vh;
+}
+
+
+
+
+
+
 
 
 
