@@ -530,10 +530,11 @@ footer{
 .scroll{
     display: flex;
     flex-direction: column;
-    margin-top: 10vh;
-    margin-bottom: 2vh;
+    padding-top: 10vh;
+    padding-bottom: 2vh;
     align-items: center;
     width: 100%;
+    background-color: rgb(228, 207, 207);
     z-index: 6;
 }
 .scroll-bar{
@@ -594,7 +595,7 @@ footer{
 }
 .about{
     position: a;
-    background-color: antiquewhite;
+    background-color: rgb(240, 226, 226);
     padding-top: 20px;
     padding-bottom: 30px;
 }
@@ -609,7 +610,7 @@ footer{
     font-size: 16px;
 }
 .direction{
-    background-color: #ffdead;
+    background-color: rgb(228, 207, 207);
     overflow: hidden;
     padding-top: 20px;
     padding-bottom: 30px;
@@ -620,7 +621,7 @@ footer{
     font-size: 0.8em;
 }
 .contact{
-    background-color: burlywood;
+    background-color: rgb(240, 226, 226);
     padding: 30px;
     padding-top: 20px;
     padding-bottom: 30px;
